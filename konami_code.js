@@ -14,6 +14,7 @@ function init() {
     for (var i = 0; i < code.length; i++){
       if (key === code[index]){
         index++;
+        console.log(index);
 
         if (index === code.length){
           alert("Hurray!");

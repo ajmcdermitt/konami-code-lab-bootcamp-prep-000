@@ -6,18 +6,18 @@ function init() {
 
   let index = 0;
   document.body.addEventListener('keydown', onKeyDownHandler);
-  
+
 
   function onKeyDownHandler(e) {
     const key = parseInt(e.detail || e.which);
- 
+
     if (key === code[index]) {
       index++;
       console.log(index);
-   
+
       if (index === code.length) {
         alert("Hurray!");
-   
+
         index = 0;
       }
     } else {
